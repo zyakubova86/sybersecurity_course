@@ -1,0 +1,32 @@
+## How to Install Wine on Debian:
+sudo dpkg --add-architecture i386
+sudo mkdir -pm755 /etc/apt/keyrings
+sudo wget -0 /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bullseye/winehq-bullseye.sources
+sudo apt update
+sudo apt install --install-recommends winehq-stable
+wine --version
+winecfg
+
+# 2-option
+Commands Used:
+$ sudo dpkg --add-architecture i386
+$ sudo apt update
+$ sudo apt install wine wine64 wine32 winbind winetricks
+$ wine name_of_the_file.exe
+
+
+test.exe
+test-‮fdp.exe
+
+
+
+Компьютер\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v [test] /t REG_SZ /d "C:/[test.exe]
+
+# 1. download package
+wine /root/.wine/drive_c/python.exe -m pip3 install [requests]
+
+# 2. convert into executable with pyinstaller
+wine /root/.wine/drive_c/Scripts/pyinstaller.exe [tr_download_execute_report.py] --onefile --noconsole
