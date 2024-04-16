@@ -1,0 +1,13 @@
+altgraph==0.17.4
+beautifulsoup4==4.12.3
+certifi==2024.2.2
+charset-normalizer==3.3.2
+idna==3.6
+NetfilterQueue==1.1.0
+packaging==23.2
+pyinstaller==6.4.0
+pyinstaller-hooks-contrib==2024.1
+requests==2.31.0
+scapy==2.5.0
+soupsieve==2.5
+urllib3==2.2.0
